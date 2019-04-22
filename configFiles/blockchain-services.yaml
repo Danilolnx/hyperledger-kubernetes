@@ -36,13 +36,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blockchain-org1peer1
+  name: anacaudit-peer1
   labels:
-    run: blockchain-org1peer1
+    run: anacaudit-peer1
 spec:
   type: NodePort
   selector:
-    name: org1peer1
+    name: anacaudit-peer1
   ports:
   - protocol: TCP
     nodePort: 30110
@@ -58,13 +58,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blockchain-org2peer1
+  name: anacaudit-peer2
   labels:
-    run: blockchain-org2peer1
+    run: anacaudit-peer2
 spec:
   type: NodePort
   selector:
-    name: org2peer1
+    name: anacaudit-peer2
   ports:
   - protocol: TCP
     nodePort: 30210
@@ -81,9 +81,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blockchain-org3peer1
+  name: anacpool-peer1
   labels:
-    run: blockchain-org3peer1
+    run: anacpool-peer1
 spec:
   type: NodePort
   selector:
@@ -104,13 +104,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blockchain-org4peer1
+  name: anacpool-peer2
   labels:
-    run: blockchain-org4peer1
+    run: anacpool-peer2
 spec:
   type: NodePort
   selector:
-    name: org4peer1
+    name: anacpool-peer2
   ports:
   - protocol: TCP
     nodePort: 30410
